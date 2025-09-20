@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <odoo>
-    <!-- This Menu Item will appear in the Upper bar, That's why It needs NO parent or action -->
     <menuitem id="ica_hms_root" name="Hotel Management System">
-        <!-- This Menu Item must have a parent and an action -->
-        <menuitem id="hms_room_category" name="Rooms" action="ica_hms.hms_room_action"/>
-        <menuitem id="hms_hotel_category" name="Hotels" action="ica_hms.hms_hotel_action"/>
+        <menuitem id="hms_hotel_category" name="Hotels" action="ica_hms.hms_hotel_action" sequence="0"/>
+        <menuitem id="hms_room_category" name="Rooms" action="ica_hms.hms_room_action" sequence="1"/>
     </menuitem>
 </odoo>

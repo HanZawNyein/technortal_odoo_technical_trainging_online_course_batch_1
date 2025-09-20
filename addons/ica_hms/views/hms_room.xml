@@ -22,9 +22,12 @@
         <field name="arch" type="xml">
             <form string="hms_room_form">
                 <sheet>
+                    <widget name="web_ribbon" title="Archived" bg_color="text-bg-danger" invisible="active"/>
                     <group>
                         <group>
                             <field name="name"/>
+                            <field name="currency_id" invisible="1"/>
+                            <field name="amount"/>
                             <field name="hotel_id"/>
                         </group>
                         <group>
